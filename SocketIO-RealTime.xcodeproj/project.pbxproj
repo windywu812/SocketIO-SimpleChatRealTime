@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234258D8272E922400D5DE5A /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234258D7272E922400D5DE5A /* ChatService.swift */; };
+		234258DB272E92F900D5DE5A /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234258DA272E92F900D5DE5A /* MessageModel.swift */; };
+		234258DE272E951D00D5DE5A /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234258DD272E951D00D5DE5A /* MessageTableViewCell.swift */; };
 		23C8FFD0272BAD9300F55D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8FFCF272BAD9300F55D84 /* AppDelegate.swift */; };
 		23C8FFD2272BAD9300F55D84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8FFD1272BAD9300F55D84 /* SceneDelegate.swift */; };
 		23C8FFD4272BAD9300F55D84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8FFD3272BAD9300F55D84 /* ViewController.swift */; };
-		23C8FFD7272BAD9300F55D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C8FFD5272BAD9300F55D84 /* Main.storyboard */; };
 		23C8FFD9272BAD9500F55D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C8FFD8272BAD9500F55D84 /* Assets.xcassets */; };
 		23C8FFDC272BAD9500F55D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C8FFDA272BAD9500F55D84 /* LaunchScreen.storyboard */; };
+		5D85530111E3E7225B5BDBD7 /* Pods_SocketIO_RealTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5DF81917FFC371870721F8 /* Pods_SocketIO_RealTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5DF81917FFC371870721F8 /* Pods_SocketIO_RealTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIO_RealTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		234258D7272E922400D5DE5A /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		234258DA272E92F900D5DE5A /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		234258DD272E951D00D5DE5A /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		23C8FFCC272BAD9300F55D84 /* SocketIO-RealTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocketIO-RealTime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C8FFCF272BAD9300F55D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C8FFD1272BAD9300F55D84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		23C8FFD3272BAD9300F55D84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23C8FFD6272BAD9300F55D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23C8FFD8272BAD9500F55D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C8FFDB272BAD9500F55D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C8FFDD272BAD9500F55D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D27CF82CEC3BABE3E27016 /* Pods-SocketIO-RealTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIO-RealTime.debug.xcconfig"; path = "Target Support Files/Pods-SocketIO-RealTime/Pods-SocketIO-RealTime.debug.xcconfig"; sourceTree = "<group>"; };
+		F54C7E92AD1ECB606192DF93 /* Pods-SocketIO-RealTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIO-RealTime.release.xcconfig"; path = "Target Support Files/Pods-SocketIO-RealTime/Pods-SocketIO-RealTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D85530111E3E7225B5BDBD7 /* Pods_SocketIO_RealTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234258D4272E920200D5DE5A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				23C8FFD3272BAD9300F55D84 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		234258D5272E920B00D5DE5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				23C8FFCF272BAD9300F55D84 /* AppDelegate.swift */,
+				23C8FFD1272BAD9300F55D84 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		234258D6272E921500D5DE5A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				234258D7272E922400D5DE5A /* ChatService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		234258D9272E92EF00D5DE5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				234258DA272E92F900D5DE5A /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		234258DC272E950E00D5DE5A /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				234258DD272E951D00D5DE5A /* MessageTableViewCell.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
 		23C8FFC3272BAD9300F55D84 = {
 			isa = PBXGroup;
 			children = (
 				23C8FFCE272BAD9300F55D84 /* SocketIO-RealTime */,
 				23C8FFCD272BAD9300F55D84 /* Products */,
+				F3895DAF1EDC4CF7F2614AA1 /* Pods */,
+				2DF1B24E643879985BAD420F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +108,33 @@
 		23C8FFCE272BAD9300F55D84 /* SocketIO-RealTime */ = {
 			isa = PBXGroup;
 			children = (
-				23C8FFCF272BAD9300F55D84 /* AppDelegate.swift */,
-				23C8FFD1272BAD9300F55D84 /* SceneDelegate.swift */,
-				23C8FFD3272BAD9300F55D84 /* ViewController.swift */,
-				23C8FFD5272BAD9300F55D84 /* Main.storyboard */,
+				234258D5272E920B00D5DE5A /* App */,
+				234258D6272E921500D5DE5A /* Service */,
+				234258D9272E92EF00D5DE5A /* Model */,
+				234258D4272E920200D5DE5A /* ViewController */,
+				234258DC272E950E00D5DE5A /* ReusableView */,
 				23C8FFD8272BAD9500F55D84 /* Assets.xcassets */,
 				23C8FFDA272BAD9500F55D84 /* LaunchScreen.storyboard */,
 				23C8FFDD272BAD9500F55D84 /* Info.plist */,
 			);
 			path = "SocketIO-RealTime";
+			sourceTree = "<group>";
+		};
+		2DF1B24E643879985BAD420F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E5DF81917FFC371870721F8 /* Pods_SocketIO_RealTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3895DAF1EDC4CF7F2614AA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2D27CF82CEC3BABE3E27016 /* Pods-SocketIO-RealTime.debug.xcconfig */,
+				F54C7E92AD1ECB606192DF93 /* Pods-SocketIO-RealTime.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23C8FFE0272BAD9500F55D84 /* Build configuration list for PBXNativeTarget "SocketIO-RealTime" */;
 			buildPhases = (
+				9816345B49C5987C72BBA087 /* [CP] Check Pods Manifest.lock */,
 				23C8FFC8272BAD9300F55D84 /* Sources */,
 				23C8FFC9272BAD9300F55D84 /* Frameworks */,
 				23C8FFCA272BAD9300F55D84 /* Resources */,
+				11F08CBCC032B407825707E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +199,70 @@
 			files = (
 				23C8FFDC272BAD9500F55D84 /* LaunchScreen.storyboard in Resources */,
 				23C8FFD9272BAD9500F55D84 /* Assets.xcassets in Resources */,
-				23C8FFD7272BAD9300F55D84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11F08CBCC032B407825707E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocketIO-RealTime/Pods-SocketIO-RealTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocketIO-RealTime/Pods-SocketIO-RealTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocketIO-RealTime/Pods-SocketIO-RealTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9816345B49C5987C72BBA087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocketIO-RealTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23C8FFC8272BAD9300F55D84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234258DB272E92F900D5DE5A /* MessageModel.swift in Sources */,
+				234258D8272E922400D5DE5A /* ChatService.swift in Sources */,
 				23C8FFD4272BAD9300F55D84 /* ViewController.swift in Sources */,
 				23C8FFD0272BAD9300F55D84 /* AppDelegate.swift in Sources */,
 				23C8FFD2272BAD9300F55D84 /* SceneDelegate.swift in Sources */,
+				234258DE272E951D00D5DE5A /* MessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		23C8FFD5272BAD9300F55D84 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23C8FFD6272BAD9300F55D84 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23C8FFDA272BAD9500F55D84 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +392,7 @@
 		};
 		23C8FFE1272BAD9500F55D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D27CF82CEC3BABE3E27016 /* Pods-SocketIO-RealTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +403,6 @@
 				INFOPLIST_FILE = "SocketIO-RealTime/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +414,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		23C8FFE2272BAD9500F55D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54C7E92AD1ECB606192DF93 /* Pods-SocketIO-RealTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +431,6 @@
 				INFOPLIST_FILE = "SocketIO-RealTime/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +442,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
