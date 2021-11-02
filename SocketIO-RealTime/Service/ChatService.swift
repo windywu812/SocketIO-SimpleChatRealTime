@@ -25,7 +25,7 @@ class ChatService: ChatServiceProtocol {
     private let id: String = UUID().uuidString
     private var socketClient: SocketIOClient
     
-    private let socketManager = SocketManager(socketURL: URL(string: "http://192.168.100.67:3000")!)
+    private let socketManager = SocketManager(socketURL: URL(string: "ENTER YOUR URL HERE")!)
     
     weak var delegate: ChatServiceDelegate?
     
