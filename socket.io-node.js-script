@@ -1,0 +1,48 @@
+const express = require("express");
+const app = express();
+const http = require("http");
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server, {
+  allowEIO3: true,
+});
+
+let totalConnection = 0;
+
+var angka = 123;
+var hello: String = "hello";
+
+if (angka == 123) {
+}
+
+io.on("connection", (socket) => {
+  totalConnection += 1;
+  io.emit("totalUser", totalConnection);
+
+  socket.on("chatMessage", (msg) => {
+    io.emit("chatMessage", msg);
+  });
+
+  socket.on("on-active", () => {
+    totalConnection += 1;
+    io.emit("totalUser", totalConnection);
+  });
+
+  socket.on("disconnecting", (socket) => {
+    totalConnection -= 1;
+    console.log("disconnected");
+
+    io.emit("totalUser", totalConnection);
+  });
+});
+
+server.listen(3000, () => {
+  console.log("listening on *:3000");
+});
+
+// Library Used
+// "body-parser": "^1.19.0"
+// "express": "^4.17.1"
+// "mysql": "^2.18.1"
+// "nodemon": "^2.0.14"
+// "socket.io": "^4.3.1"
